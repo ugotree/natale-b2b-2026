@@ -13,7 +13,7 @@ assets/         # Immagini prodotti, hero e loghi
 
 1. **Hero** — "Il regalo più bello è quello che resta." + foto vivaio
 2. **Impact band** — 4 numeri chiave (15+ anni, 17 paesi, 13.000+ aziende, 94% rinnovo)
-3. **01 · Le formule** — 3 gift card: Scegli il progetto (NOVITÀ), Regalare un albero, Prodotti buoni due volte
+3. **01 · Le formule** — 3 gift card: Regala un impatto (Regenera), Regala un albero, Prodotti buoni due volte
 4. **02 · Albero + prodotto** — Caffè Doña Lucero e Cioccolato Ciòchèbbuòno
 5. **03 · Prodotti Boniviri** — Olio EVO, Miele, Tisane, Fior di sale (B Corp siciliana)
 6. **04 · Grandi quantità** — offerta su misura per ordini 500+
