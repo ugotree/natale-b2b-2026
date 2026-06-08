@@ -175,6 +175,20 @@
     color: var(--ink-400); font-style: italic; font-size: var(--fs-small);
   }
 
+  /* ---------- HERO STAT OVERLAY ---------- */
+  .hero-stat-overlay {
+    position: absolute; bottom: var(--s-6); right: var(--s-6); z-index: 3;
+    background: rgba(10, 28, 19, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(63, 211, 105, 0.35);
+    border-radius: var(--r-md);
+    padding: var(--s-5) var(--s-6);
+    text-align: right;
+  }
+  .hero-stat-overlay .stat-big { font-size: 2.4rem; font-weight: 800; color: var(--leaf-500); line-height: 1; letter-spacing: var(--ls-display); }
+  .hero-stat-overlay .stat-lbl { margin-top: 6px; font-size: var(--fs-eyebrow); font-weight: 500; letter-spacing: var(--ls-eyebrow); text-transform: uppercase; color: var(--ink-400); max-width: 160px; line-height: 1.4; }
+
   .hero-caption {
     position: absolute; left: -var(--s-8); bottom: -var(--s-6);
     background: var(--forest-700); border: 1px solid var(--forest-500);
@@ -202,7 +216,9 @@
   .section-desc { margin-top: var(--s-5); max-width: 560px; color: var(--ink-200); }
 
   /* ---------- GIFT CARDS ---------- */
-  .gifts { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s-8); margin-bottom: var(--s-10); }
+  .gifts { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s-8); margin-bottom: var(--s-7); }
+  .gifts-note { margin-bottom: var(--s-10); padding: var(--s-6) var(--s-7); border: 1px solid var(--forest-500); border-radius: var(--r-md); font-size: var(--fs-small); color: var(--ink-400); font-style: italic; line-height: var(--lh-body); text-align: center; }
+  @media (max-width: 980px) { .gifts { grid-template-columns: 1fr; } }
   @media (max-width: 980px) { .gifts { grid-template-columns: 1fr; gap: var(--s-7); } }
 
   .gift {
@@ -449,7 +465,13 @@
     </div>
 
     <div class="hero-right">
-      <div class="hero-photo"><img src="assets/hero-vivaio.png" alt="Piantina di cacao in vivaio" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;" /></div>
+      <div class="hero-photo">
+        <img src="assets/hero-vivaio.png" alt="Piantina di cacao in vivaio" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;" />
+        <div class="hero-stat-overlay">
+          <div class="stat-big">4,2M</div>
+          <div class="stat-lbl">Alberi piantati nel mondo con Treedom</div>
+        </div>
+      </div>
     </div>
   </div>
 </header>
@@ -537,8 +559,7 @@
             <div class="gift-meta-item">Spedizione coordinata su lista di nomi</div>
           </div>
           <div class="gift-foot">
-            <div class="gift-price">Da
-9,90€/albero</div>
+            <div class="gift-price">Da 9,90€/albero</div>
             <a class="gift-cta" href="#contatti" style="width: 125px">Scopri di più →</a>
           </div>
         </div>
@@ -563,13 +584,13 @@
             <div class="gift-meta-item">Abbinabili a un albero o a un progetto</div>
           </div>
           <div class="gift-foot">
-            <div class="gift-price">A partire da 
-6,60€/pezzo</div>
+            <div class="gift-price">A partire da 6,60€/pezzo</div>
             <a class="gift-cta" href="#contatti" style="width: 200px">Scopri di più →</a>
           </div>
         </div>
       </article>
     </div>
+    <p class="gifts-note reveal">Le tre formule possono combinarsi liberamente — un albero per ogni dipendente, una box per i clienti chiave, un progetto per chi vuole un gesto più grande.</p>
   </div>
 </section>
 
@@ -630,25 +651,25 @@
         <div class="bon-media"><img src="assets/olio-evo-boniviri.png" alt="Olio EVO biologico Boniviri" style="width:100%; height:100%; object-fit:cover; display:block;" /></div>
         <div class="bon-name">Olio EVO biologico</div>
         <div class="bon-detail">Blend siciliano · 100 ml · Boniviri</div>
-        <div class="bon-price">A partire da 8,40€</div>
+        <div class="bon-price">A partire da 8,40€ <span style="font-weight:400;color:var(--ink-500)">(oltre 960 pz)</span></div>
       </article>
       <article class="bon-card reveal" data-delay="2">
         <div class="bon-media"><img src="assets/miele-zagara-boniviri.png" alt="Miele biologico di zagara d'arancio Boniviri" style="width:100%; height:100%; object-fit:cover; display:block;" /></div>
         <div class="bon-name">Miele biologico</div>
         <div class="bon-detail">Castagno / millefiori / zagara · 100 g</div>
-        <div class="bon-price">A partire da 8,40€</div>
+        <div class="bon-price">A partire da 8,40€ <span style="font-weight:400;color:var(--ink-500)">(oltre 960 pz)</span></div>
       </article>
       <article class="bon-card reveal" data-delay="3">
         <div class="bon-media"><img src="assets/tisane-etna-boniviri.png" alt="Tisane dell'Etna Boniviri" style="width:100%; height:100%; object-fit:cover; display:block;" /></div>
         <div class="bon-name">Tisane dell'Etna</div>
         <div class="bon-detail">4 filtri compostabili in barattolo</div>
-        <div class="bon-price">A partire da 6,60€</div>
+        <div class="bon-price">A partire da 6,60€ <span style="font-weight:400;color:var(--ink-500)">(oltre 960 pz)</span></div>
       </article>
       <article class="bon-card reveal" data-delay="4">
         <div class="bon-media"><img src="assets/fior-di-sale-boniviri.png" alt="Fior di sale alle erbe Boniviri" style="width:100%; height:100%; object-fit:cover; display:block;" /></div>
         <div class="bon-name">Fior di sale alle erbe</div>
         <div class="bon-detail">Sale di Marsala + erbe mediterranee · 30 g</div>
-        <div class="bon-price">A partire da 9,90€</div>
+        <div class="bon-price">A partire da 9,90€ <span style="font-weight:400;color:var(--ink-500)">(oltre 960 pz)</span></div>
       </article>
     </div>
   </div>
