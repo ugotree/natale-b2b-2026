@@ -11,18 +11,27 @@ assets/         # Immagini prodotti, hero e loghi
 
 ## Sezioni
 
-1. **Hero** — headline + immagine vivaio
+1. **Hero** — "Il regalo più bello è quello che resta." + foto vivaio
 2. **Impact band** — 4 numeri chiave (15+ anni, 17 paesi, 13.000+ aziende, 94% rinnovo)
-3. **Le formule** — 3 gift card: Progetto Regenera, Albero, Prodotti biologici
-4. **Albero + Prodotto** — Caffè Doña Lucero e Cioccolato Ciòchèbbuòno
-5. **Prodotti Boniviri** — Olio EVO, Miele, Tisane, Fior di sale
-6. **Grandi quantità** — offerta su misura per ordini 500+
-7. **Perché adesso** — timeline Giugno → Dicembre 2026
-8. **CTA / Contatti** — form call + contatto Anna Ciattini
+3. **01 · Le formule** — 3 gift card: Scegli il progetto (NOVITÀ), Regalare un albero, Prodotti buoni due volte
+4. **02 · Albero + prodotto** — Caffè Doña Lucero e Cioccolato Ciòchèbbuòno
+5. **03 · Prodotti Boniviri** — Olio EVO, Miele, Tisane, Fior di sale (B Corp siciliana)
+6. **04 · Grandi quantità** — offerta su misura per ordini 500+
+7. **05 · Perché adesso** — timeline orizzontale Giugno → Dicembre 2026
+8. **CTA** — "Parliamone davanti a un caffè" con link diretto al calendario Pipedrive
+
+## CTA principale
+
+Tutte le call-to-action "Prenota una call" puntano al calendario Pipedrive:
+`https://treedomsrl.pipedrive.com/scheduler/wkGR6hKJ/lets-green-the-planet-it`
+
+## Design system
+
+Regenera Design System — palette forest (`#0A1C13` base), accento leaf green (`#3FD369`), tipografia Montserrat. Nessun framework esterno, solo Google Fonts.
 
 ## Sviluppo
 
-La pagina è un singolo file HTML statico, nessuna dipendenza esterna oltre a Google Fonts (Montserrat). Si apre direttamente nel browser.
+La pagina è un singolo file HTML statico. Si apre direttamente nel browser senza build step.
 
 ## Contatto
 
