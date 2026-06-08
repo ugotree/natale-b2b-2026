@@ -175,20 +175,6 @@
     color: var(--ink-400); font-style: italic; font-size: var(--fs-small);
   }
 
-  /* ---------- HERO STAT OVERLAY ---------- */
-  .hero-stat-overlay {
-    position: absolute; bottom: var(--s-6); right: var(--s-6); z-index: 3;
-    background: rgba(10, 28, 19, 0.85);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(63, 211, 105, 0.35);
-    border-radius: var(--r-md);
-    padding: var(--s-5) var(--s-6);
-    text-align: right;
-  }
-  .hero-stat-overlay .stat-big { font-size: 2.4rem; font-weight: 800; color: var(--leaf-500); line-height: 1; letter-spacing: var(--ls-display); }
-  .hero-stat-overlay .stat-lbl { margin-top: 6px; font-size: var(--fs-eyebrow); font-weight: 500; letter-spacing: var(--ls-eyebrow); text-transform: uppercase; color: var(--ink-400); max-width: 160px; line-height: 1.4; }
-
   .hero-caption {
     position: absolute; left: -var(--s-8); bottom: -var(--s-6);
     background: var(--forest-700); border: 1px solid var(--forest-500);
@@ -216,9 +202,7 @@
   .section-desc { margin-top: var(--s-5); max-width: 560px; color: var(--ink-200); }
 
   /* ---------- GIFT CARDS ---------- */
-  .gifts { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s-8); margin-bottom: var(--s-7); }
-  .gifts-note { margin-bottom: var(--s-10); padding: var(--s-6) var(--s-7); border: 1px solid var(--forest-500); border-radius: var(--r-md); font-size: var(--fs-small); color: var(--ink-400); font-style: italic; line-height: var(--lh-body); text-align: center; }
-  @media (max-width: 980px) { .gifts { grid-template-columns: 1fr; } }
+  .gifts { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s-8); margin-bottom: var(--s-10); }
   @media (max-width: 980px) { .gifts { grid-template-columns: 1fr; gap: var(--s-7); } }
 
   .gift {
@@ -438,40 +422,34 @@
     <a href="#regali">I Regali</a>
     <a href="#perche">Perché ora</a>
     <a href="#contatti">Contatti</a>
-    <a href="#contatti" class="nav-cta" style="border-radius: 14px">Prenota una call</a>
+    <a href="https://treedomsrl.pipedrive.com/scheduler/wkGR6hKJ/lets-green-the-planet-it" target="_blank" rel="noopener" class="nav-cta" style="border-radius: 14px">Prenota una call</a>
   </div>
 </nav>
 
 <!-- ============ HERO ============ -->
-<header class="hero" id="hero" style="padding: 128px 0px 0px">
+<header class="hero" id="hero" style="padding: 128px 0px 120px; min-height: auto">
   <div class="wrap hero-inner">
     <div class="hero-left">
-      <div class="hero-label rg-eyebrow">Treedom · for Business · Edizione Natale</div>
-      <h1 class="rg-display">
+      <div class="hero-label rg-eyebrow">TREEDOM FOR BUSINESS · NATALE 2026</div>
+      <h1 class="rg-display" style="font-size: 48px">
         Il regalo più bello<br/>
         <span class="accent">è quello che resta.</span>
       </h1>
       <p class="rg-body">
         Un albero, un progetto ambientale, un prodotto da filiera etica o tutto insieme. Per i tuoi clienti e collaboratori, un gesto che vale più di qualsiasi gadget.
       </p>
-      <div style="display: inline-flex; align-items: center; gap: var(--s-4); background: rgba(63,211,105,0.08); border: 1px solid rgba(63,211,105,0.35); border-radius: var(--r-sm); padding: var(--s-4) var(--s-5); font-size: var(--fs-small); color: #d4f0b0; margin-bottom: var(--s-6); margin-top: var(--s-6); justify-content: flex-start; width: 543px">
-        <span style="width: 6px; height: 6px; border-radius: 50%; background: #6dcc4a; flex-shrink: 0; animation: pulse 2s infinite;"></span>
-        Le personalizzazioni si progettano con calma. Giugno è il momento giusto.
-      </div>
+      <div style="display: inline-flex; align-items: center; gap: var(--s-4); background: rgba(63,211,105,0.08); border: 1px solid rgba(63,211,105,0.35); border-radius: var(--r-sm); padding: var(--s-4) var(--s-5); font-size: var(--fs-small); color: #d4f0b0; margin-bottom: var(--s-6); margin-top: var(--s-6); justify-content: flex-start; width: 480px">Le personalizzazioni si progettano con calma. 
+
+
+Giugno è il momento giusto.</div>
       <div class="hero-cta">
         <a href="#regali" class="btn btn-primary" style="border-radius: 14px">Scopri i regali</a>
-        <a href="#contatti" class="btn btn-ghost">Prenota una call</a>
+        <a href="https://treedomsrl.pipedrive.com/scheduler/wkGR6hKJ/lets-green-the-planet-it" target="_blank" rel="noopener" class="btn btn-ghost">Prenota una call</a>
       </div>
     </div>
 
     <div class="hero-right">
-      <div class="hero-photo">
-        <img src="assets/hero-vivaio.png" alt="Piantina di cacao in vivaio" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;" />
-        <div class="hero-stat-overlay">
-          <div class="stat-big">4,2M</div>
-          <div class="stat-lbl">Alberi piantati nel mondo con Treedom</div>
-        </div>
-      </div>
+      <div class="hero-photo"><img src="assets/hero-vivaio.png" alt="Piantina di cacao in vivaio" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;" /></div>
     </div>
   </div>
 </header>
@@ -501,9 +479,9 @@
 </section>
 
 <!-- ============ GIFTS ============ -->
-<section class="section section-forest" id="regali">
+<section class="section section-forest" id="regali" style="padding: 100px 0px">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head" style="grid-template-columns: 1fr; gap: var(--s-4);">
       <div class="section-label rg-eyebrow reveal">
         <span style="display: inline-block; width: 6px; height: 6px; border-radius: 999px; background: var(--leaf-500); flex-shrink: 0;"></span>
         01 · Le formule
@@ -522,7 +500,7 @@
       <!-- GIFT 01 -->
       <article class="gift reveal" data-delay="1">
         <div class="gift-media">
-          <span class="gift-label" style="padding: 5px 10px">Più scelta</span>
+          <span class="gift-label" style="padding: 5px 10px">NOVITÀ</span>
           <span class="gift-num">I</span>
           <img src="assets/progetto-regenera.png" alt="Volontari del progetto Regenera" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;" />
         </div>
@@ -559,7 +537,7 @@
             <div class="gift-meta-item">Spedizione coordinata su lista di nomi</div>
           </div>
           <div class="gift-foot">
-            <div class="gift-price">Da 9,90€/albero</div>
+            <div class="gift-price">A partire da 9,90€/albero</div>
             <a class="gift-cta" href="#contatti" style="width: 125px">Scopri di più →</a>
           </div>
         </div>
@@ -573,8 +551,8 @@
           <img src="assets/prodotti-biologici.png" alt="Prodotti biologici Treedom" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;" />
         </div>
         <div class="gift-body">
-          <div class="gift-tag">FILIERA ETICA CERTIFICATA</div>
-          <h3 class="gift-title">Prodotti buoni biologici.</h3>
+          <div class="gift-tag">FILIERA ETICA</div>
+          <h3 class="gift-title">Prodotti buoni due volte.</h3>
           <p class="gift-desc">
             Caffè dal Guatemala, cioccolato dall'Ecuador, olio biologico siciliano, tisane dell'Etna. Ogni prodotto viene da filiere certificate e realtà a impatto zero. Soli o abbinati a un albero.
           </p>
@@ -590,21 +568,20 @@
         </div>
       </article>
     </div>
-    <p class="gifts-note reveal">Le tre formule possono combinarsi liberamente — un albero per ogni dipendente, una box per i clienti chiave, un progetto per chi vuole un gesto più grande.</p>
   </div>
 </section>
 
 <!-- ============ ALBERO + PRODOTTO ============ -->
 <section class="section section-elevated" id="abbinamenti">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head" style="grid-template-columns: 1fr; gap: var(--s-4);">
       <div class="section-label rg-eyebrow reveal">
         <span style="display: inline-block; width: 6px; height: 6px; border-radius: 999px; background: var(--leaf-500); flex-shrink: 0;"></span>
         02 · Albero + prodotto
       </div>
       <div>
         <h2 class="section-title rg-h1 reveal" data-delay="1">
-          Il prodotto che viene <span class="accent">dall'albero che regali.</span>
+          Prodotti con <span class="accent">una storia.</span>
         </h2>
         <p class="section-desc rg-body reveal" data-delay="2">Caffè dal Guatemala, cioccolato dall'Ecuador. Ogni prodotto ha un'origine precisa, una filiera trasparente, una storia che vale la pena raccontare.</p>
       </div>
@@ -633,7 +610,7 @@
 <!-- ============ PRODOTTI BONIVIRI ============ -->
 <section class="section section-forest" id="boniviri">
   <div class="wrap">
-    <div class="bon-header">
+    <div class="bon-header" style="grid-template-columns: 1fr; gap: var(--s-4);">
       <div>
         <div class="section-label rg-eyebrow reveal" style="margin-bottom: var(--s-5);">
           <span style="display: inline-block; width: 6px; height: 6px; border-radius: 999px; background: var(--leaf-500); flex-shrink: 0;"></span>
@@ -642,8 +619,8 @@
         <h2 class="section-title rg-h1 reveal" data-delay="1">
           Biologici, etici, <span class="accent">buoni davvero.</span>
         </h2>
+        <p class="rg-body reveal" data-delay="2" style="color: var(--ink-200); margin-top: var(--s-4);">In partnership con Boniviri, B Corp siciliana, ogni prodotto è personalizzabile con card aziendale e QR code per attivare l'esperienza digitale.</p>
       </div>
-      <p class="rg-body reveal" data-delay="2" style="color: var(--ink-200);">In partnership con Boniviri, B Corp siciliana, ogni prodotto è personalizzabile con card aziendale e QR code per attivare l'esperienza digitale.</p>
     </div>
 
     <div class="bon-grid">
@@ -651,25 +628,25 @@
         <div class="bon-media"><img src="assets/olio-evo-boniviri.png" alt="Olio EVO biologico Boniviri" style="width:100%; height:100%; object-fit:cover; display:block;" /></div>
         <div class="bon-name">Olio EVO biologico</div>
         <div class="bon-detail">Blend siciliano · 100 ml · Boniviri</div>
-        <div class="bon-price">A partire da 8,40€ <span style="font-weight:400;color:var(--ink-500)">(oltre 960 pz)</span></div>
+        <div class="bon-price">A partire da 8,40€</div>
       </article>
       <article class="bon-card reveal" data-delay="2">
         <div class="bon-media"><img src="assets/miele-zagara-boniviri.png" alt="Miele biologico di zagara d'arancio Boniviri" style="width:100%; height:100%; object-fit:cover; display:block;" /></div>
         <div class="bon-name">Miele biologico</div>
         <div class="bon-detail">Castagno / millefiori / zagara · 100 g</div>
-        <div class="bon-price">A partire da 8,40€ <span style="font-weight:400;color:var(--ink-500)">(oltre 960 pz)</span></div>
+        <div class="bon-price">A partire da 8,40€</div>
       </article>
       <article class="bon-card reveal" data-delay="3">
         <div class="bon-media"><img src="assets/tisane-etna-boniviri.png" alt="Tisane dell'Etna Boniviri" style="width:100%; height:100%; object-fit:cover; display:block;" /></div>
         <div class="bon-name">Tisane dell'Etna</div>
         <div class="bon-detail">4 filtri compostabili in barattolo</div>
-        <div class="bon-price">A partire da 6,60€ <span style="font-weight:400;color:var(--ink-500)">(oltre 960 pz)</span></div>
+        <div class="bon-price">A partire da 6,60€</div>
       </article>
       <article class="bon-card reveal" data-delay="4">
         <div class="bon-media"><img src="assets/fior-di-sale-boniviri.png" alt="Fior di sale alle erbe Boniviri" style="width:100%; height:100%; object-fit:cover; display:block;" /></div>
         <div class="bon-name">Fior di sale alle erbe</div>
         <div class="bon-detail">Sale di Marsala + erbe mediterranee · 30 g</div>
-        <div class="bon-price">A partire da 9,90€ <span style="font-weight:400;color:var(--ink-500)">(oltre 960 pz)</span></div>
+        <div class="bon-price">A partire da 9,90€</div>
       </article>
     </div>
   </div>
@@ -706,12 +683,8 @@
         <h2 class="section-title rg-h1 reveal" data-delay="1">
           <span class="accent">Giugno</span> è il momento giusto.
         </h2>
-        <p class="section-desc rg-body reveal" data-delay="2">Non c'è fretta, ma chi parte prima ha più scelta e più tempo per farlo bene.</p>
+        <p class="section-desc rg-body reveal" data-delay="2">Non c'è fretta, ma chi parte prima ha più scelta e più tempo per farlo bene. Le personalizzazioni si progettano con calma. Chi parte da giugno ha la finestra ideale: massima scelta, massima personalizzazione e tutto il tempo per farlo bene.</p>
       </div>
-    </div>
-
-    <div class="htl-lead reveal">
-      <p class="rg-body">Le personalizzazioni si progettano con calma. Chi parte da giugno ha la finestra ideale: massima scelta, massima personalizzazione e tutto il tempo per farlo bene.</p>
     </div>
 
     <div class="htimeline reveal" data-delay="1">
@@ -764,47 +737,7 @@
       Senza impegno, senza moduli lunghi.<br/>Raccontaci il tuo Natale e troviamo la formula giusta.
     </p>
     <div class="cta-actions reveal" data-delay="2">
-      <a href="#" class="btn btn-primary" style="border-radius: 14px">Prenota la call</a>
-      <a href="mailto:business@treedom.net" class="btn btn-ghost">Scrivi direttamente</a>
-    </div>
-
-    <div class="meet-card reveal" data-delay="2">
-      <div class="meet-col">
-        <div class="meet-label rg-eyebrow">Il tuo contatto</div>
-        <h3 class="rg-h2">Anna Ciattini</h3>
-        <p class="rg-body">Senior Account, Treedom</p>
-        <div class="meet-list" style="margin-top: var(--s-6);">
-          <a class="meet-link" href="mailto:sara.bianchi@treedom.net">
-            <div class="key">a.ciattini@treedom.net</div>
-            <div class="val">scrivi →</div>
-          </a>
-          <a class="meet-link" href="tel:+390000000000">
-            <div class="key">+39 000 000 0000</div>
-            <div class="val">chiama →</div>
-          </a>
-        </div>
-      </div>
-      <div class="meet-col">
-        <div class="meet-label rg-eyebrow">Cosa puoi fare subito</div>
-        <ul class="meet-list">
-          <li><a class="meet-link" href="#">
-            <div class="key">Scarica la presentazione prodotti</div>
-            <div class="val">→</div>
-          </a></li>
-          <li><a class="meet-link" href="#">
-            <div class="key">Guarda i case study</div>
-            <div class="val">→</div>
-          </a></li>
-          <li><a class="meet-link" href="#">
-            <div class="key">Richiedi un preventivo</div>
-            <div class="val">→</div>
-          </a></li>
-          <li><a class="meet-link" href="#">
-            <div class="key">Chiama direttamente</div>
-            <div class="val">→</div>
-          </a></li>
-        </ul>
-      </div>
+      <a href="https://treedomsrl.pipedrive.com/scheduler/wkGR6hKJ/lets-green-the-planet-it" target="_blank" rel="noopener" class="btn btn-primary" style="border-radius: 14px">Prenota la call</a>
     </div>
   </div>
 </section>
