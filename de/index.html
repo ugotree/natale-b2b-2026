@@ -3,8 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Treedom · Natale 2026 — Regalare rigenerazione</title>
-  <link rel="alternate" hreflang="it" href="/it/" />
+<title>Treedom · Natale 2026 — Regalare rigenerazione</title>  <link rel="alternate" hreflang="it" href="/it/" />
   <link rel="alternate" hreflang="en" href="/en/" />
   <link rel="alternate" hreflang="es" href="/es/" />
   <link rel="alternate" hreflang="de" href="/de/" />
@@ -903,16 +902,13 @@
 </script>
 
 <script>
-  (function() {
-    var lang = 'de';
-    if (typeof setLanguage === 'function') {
-      setLanguage(lang);
-    }
+  document.addEventListener('DOMContentLoaded', function() {
+    setLanguage('de');
     ['lang-switch','lang-switch-footer'].forEach(function(id) {
       var el = document.getElementById(id);
-      if (el) el.value = lang;
+      if (el) el.value = 'de';
     });
-  })();
+  });
 </script>
 </body>
 </html>

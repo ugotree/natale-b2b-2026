@@ -1051,9 +1051,4 @@ function setLanguage(lang) {
   window.currentLanguage = lang;
 }
 
-// Initialize with Italian when DOM is ready
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', () => setLanguage('it'));
-} else {
-  setLanguage('it');
-}
+// Language init is handled by each page (see /it/, /en/, /es/, /de/ index.html)
