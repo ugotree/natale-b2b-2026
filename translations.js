@@ -114,11 +114,21 @@ const translations = {
       }
     },
     regenera: {
-      label: "REGALA UN IMPATTO - NOVITÀ 2026",
+      sectionLabel: "REGALA UN IMPATTO - NOVITÀ 2026",
       title: "Scegli il progetto.",
       titleAccent: "O lascia scegliere a loro.",
       desc: "Quest'anno il regalo di Natale aziendale diventa un contributo concreto a un progetto ambientale. Decidi tu quale, oppure dai a ogni dipendente e cliente la libertà di scegliere quello che sente più vicino. A Natale, invece di un gadget, arriva qualcosa che vale davvero.",
-      cta: "Scopri i progetti"
+      cta: "Scopri i progetti",
+      projectsTitle: "Alcuni progetti che puoi supportare.",
+      project1Title: "Natura Urbana",
+      project1Location: "Italia",
+      project1Desc: "Alberi e spazi verdi nelle città italiane. Un contributo che migliora la qualità dell'aria dove le persone vivono ogni giorno.",
+      project2Title: "Rimozione Plastica",
+      project2Location: "Indonesia",
+      project2Desc: "Plastica intercettata prima che raggiunga il mare. Ogni contributo genera Plastic Credits certificati.",
+      project3Title: "Vox Maris",
+      project3Location: "Sardegna",
+      project3Desc: "Reti da pesca abbandonate recuperate dai porti sardi e trasformate in nuova risorsa. Un progetto che coinvolge pescatori e comunità locali."
     },
     bulk: {
       title: "Più di 500 pezzi?",
@@ -240,6 +250,38 @@ const translations = {
       },
       note: "Prefer just the product without pairing it with a tree? No problem, it's available that way too."
     },
+    pair: {
+      section: "02 · Tree + Product",
+      title: "Products with",
+      titleAccent: "a story.",
+      subtitle: "Coffee from Guatemala, chocolate from Ecuador. Every product has a precise origin, a transparent supply chain, a story worth telling.",
+      coffee: {
+        label: "COFFEE TREE · DIRECT SUPPLY CHAIN",
+        title: "Doña Lucero Coffee",
+        desc: "Moka ground coffee grown in Guatemala by a community of indigenous women, in collaboration with the non-profit Amka. A gift with a story you can taste.",
+        price: "Coffee only from €15 · With tree from €22"
+      },
+      chocolate: {
+        label: "ECUADOR COCOA · ARTISANAL PROCESSING",
+        title: "Ciòchèbbuòno Chocolate",
+        desc: "70% dark chocolate from Ecuadorian cocoa beans, selected from a certified supply chain and handcrafted by Master Chocolatier in Vicoforte. A product with a precise origin and a taste you can feel.",
+        price: "Chocolate only from €12 · With tree from €15"
+      },
+      note: "Prefer just the product without pairing it with a tree? No problem, it's available that way too."
+    },
+    progetti: {
+      title: "Some projects you can support.",
+      subtitle: "The catalog is continuously updated.",
+      project1Title: "Urban Nature",
+      project1Location: "Italy",
+      project1Desc: "Trees and green spaces in Italian cities. A contribution that improves air quality where people live every day.",
+      project2Title: "Plastic Removal",
+      project2Location: "Indonesia",
+      project2Desc: "Plastic intercepted before it reaches the sea. Every contribution generates certified Plastic Credits.",
+      project3Title: "Vox Maris",
+      project3Location: "Sardinia",
+      project3Desc: "Abandoned fishing nets recovered from Sardinian ports and transformed into new resources. A project that involves fishermen and local communities."
+    },
     boniviri: {
       section: "03 · Boniviri Products",
       title: "Organic, ethical,",
@@ -267,11 +309,21 @@ const translations = {
       }
     },
     regenera: {
-      label: "GIVE AN IMPACT - NEW 2026",
+      sectionLabel: "GIVE AN IMPACT - NEW 2026",
       title: "Choose the project.",
       titleAccent: "Or let them choose.",
       desc: "This year, the corporate Christmas gift becomes a concrete contribution to an environmental project. You decide which one, or give every employee and client the freedom to choose the one they feel closest to. At Christmas, instead of a gadget, something truly meaningful arrives.",
-      cta: "Discover projects"
+      cta: "Discover projects",
+      projectsTitle: "Some projects you can support.",
+      project1Title: "Urban Nature",
+      project1Location: "Italy",
+      project1Desc: "Trees and green spaces in Italian cities. A contribution that improves air quality where people live every day.",
+      project2Title: "Plastic Removal",
+      project2Location: "Indonesia",
+      project2Desc: "Plastic intercepted before it reaches the sea. Every contribution generates certified Plastic Credits.",
+      project3Title: "Vox Maris",
+      project3Location: "Sardinia",
+      project3Desc: "Abandoned fishing nets recovered from Sardinian ports and transformed into new resources. A project that involves fishermen and local communities."
     },
     bulk: {
       title: "More than 500 pieces?",
@@ -419,12 +471,35 @@ const translations = {
         price: "A partir de 9,90€"
       }
     },
+    progetti: {
+      title: "Algunos proyectos que puedes apoyar.",
+      subtitle: "El catálogo se actualiza continuamente.",
+      project1Title: "Naturaleza Urbana",
+      project1Location: "Italia",
+      project1Desc: "Árboles y espacios verdes en ciudades italianas. Una contribución que mejora la calidad del aire donde las personas viven cada día.",
+      project2Title: "Eliminación de Plástico",
+      project2Location: "Indonesia",
+      project2Desc: "Plástico interceptado antes de llegar al mar. Cada contribución genera Créditos de Plástico certificados.",
+      project3Title: "Vox Maris",
+      project3Location: "Cerdeña",
+      project3Desc: "Redes de pesca abandonadas recuperadas de puertos sardos y transformadas en nuevos recursos. Un proyecto que involucra a pescadores y comunidades locales."
+    },
     regenera: {
-      label: "REGALA UN IMPACTO - NOVEDAD 2026",
+      sectionLabel: "REGALA UN IMPACTO - NOVEDAD 2026",
       title: "Elige el proyecto.",
       titleAccent: "O deja que ellos elijan.",
       desc: "Este año, el regalo corporativo de Navidad se convierte en una contribución concreta a un proyecto ambiental. Decide cuál, u otorga a cada empleado y cliente la libertad de elegir el que sienta más cercano. En Navidad, en lugar de un gadget, llega algo que realmente vale la pena.",
-      cta: "Descubre los proyectos"
+      cta: "Descubre los proyectos",
+      projectsTitle: "Algunos proyectos que puedes apoyar.",
+      project1Title: "Naturaleza Urbana",
+      project1Location: "Italia",
+      project1Desc: "Árboles y espacios verdes en ciudades italianas. Una contribución que mejora la calidad del aire donde las personas viven cada día.",
+      project2Title: "Eliminación de Plástico",
+      project2Location: "Indonesia",
+      project2Desc: "Plástico interceptado antes de llegar al mar. Cada contribución genera Créditos de Plástico certificados.",
+      project3Title: "Vox Maris",
+      project3Location: "Cerdeña",
+      project3Desc: "Redes de pesca abandonadas recuperadas de puertos sardos y transformadas en nuevos recursos. Un proyecto que involucra a pescadores y comunidades locales."
     },
     bulk: {
       title: "¿Más de 500 piezas?",
@@ -546,6 +621,38 @@ const translations = {
       },
       note: "Bevorzugst du nur das Produkt ohne Baum? Kein Problem, es ist auch so erhältlich."
     },
+    pair: {
+      section: "02 · Baum + Produkt",
+      title: "Produkte mit",
+      titleAccent: "einer Geschichte.",
+      subtitle: "Kaffee aus Guatemala, Schokolade aus Ecuador. Jedes Produkt hat einen präzisen Ursprung, eine transparente Lieferkette, eine Geschichte, die erzählt werden sollte.",
+      coffee: {
+        label: "KAFFEEBAUM · DIREKTE LIEFERKETTE",
+        title: "Doña Lucero Kaffee",
+        desc: "Gemahlener Moka-Kaffee, angebaut in Guatemala von einer Gemeinschaft indigener Frauen in Zusammenarbeit mit der NGO Amka. Ein Geschenk mit einer Geschichte, die man schmeckt.",
+        price: "Nur Kaffee ab 15€ · Mit Baum ab 22€"
+      },
+      chocolate: {
+        label: "ECUADOR KAKAO · HANDWERKLICHE VERARBEITUNG",
+        title: "Ciòchèbbuòno Schokolade",
+        desc: "70% Zartbitter aus ecuadorianischen Kakaobohnen, ausgewählt aus einer zertifizierten Lieferkette und handwerklich von Meister-Chocolatier in Vicoforte verarbeitet. Ein Produkt mit präzisem Ursprung und Geschmack, den man fühlt.",
+        price: "Nur Schokolade ab 12€ · Mit Baum ab 15€"
+      },
+      note: "Bevorzugst du nur das Produkt ohne Baum? Kein Problem, es ist auch so erhältlich."
+    },
+    progetti: {
+      title: "Einige Projekte, die du unterstützen kannst.",
+      subtitle: "Der Katalog wird kontinuierlich aktualisiert.",
+      project1Title: "Urbane Natur",
+      project1Location: "Italien",
+      project1Desc: "Bäume und Grünflächen in italienischen Städten. Ein Beitrag, der die Luftqualität dort verbessert, wo Menschen jeden Tag leben.",
+      project2Title: "Kunststoffabbau",
+      project2Location: "Indonesien",
+      project2Desc: "Kunststoff abgefangen, bevor er das Meer erreicht. Jeder Beitrag generiert zertifizierte Kunststoffgutschriften.",
+      project3Title: "Vox Maris",
+      project3Location: "Sardinien",
+      project3Desc: "Aufgegebene Fischernetze aus sardischen Häfen geborgen und in neue Ressourcen umgewandelt. Ein Projekt, das Fischer und lokale Gemeinden einbezieht."
+    },
     boniviri: {
       section: "03 · Boniviri-Produkte",
       title: "Bio, ethisch,",
@@ -573,11 +680,21 @@ const translations = {
       }
     },
     regenera: {
-      label: "SCHENKE WIRKUNG - NEU 2026",
+      sectionLabel: "SCHENKE WIRKUNG - NEU 2026",
       title: "Wähle das Projekt.",
       titleAccent: "Oder lass sie wählen.",
       desc: "Dieses Jahr wird das Weihnachtsgeschenk des Unternehmens zu einem konkreten Beitrag zu einem Umweltprojekt. Du entscheidest, welches, oder du gibst jedem Mitarbeiter und Kunden die Freiheit, das zu wählen, das ihm am nächsten liegt. Zu Weihnachten kommt statt eines Gadgets etwas an, das wirklich zählt.",
-      cta: "Projekte entdecken"
+      cta: "Projekte entdecken",
+      projectsTitle: "Einige Projekte, die du unterstützen kannst.",
+      project1Title: "Urbane Natur",
+      project1Location: "Italien",
+      project1Desc: "Bäume und Grünflächen in italienischen Städten. Ein Beitrag, der die Luftqualität dort verbessert, wo Menschen jeden Tag leben.",
+      project2Title: "Kunststoffabbau",
+      project2Location: "Indonesien",
+      project2Desc: "Kunststoff abgefangen, bevor er das Meer erreicht. Jeder Beitrag generiert zertifizierte Kunststoffgutschriften.",
+      project3Title: "Vox Maris",
+      project3Location: "Sardinien",
+      project3Desc: "Aufgegebene Fischernetze aus sardischen Häfen geborgen und in neue Ressourcen umgewandelt. Ein Projekt, das Fischer und lokale Gemeinden einbezieht."
     },
     bulk: {
       title: "Mehr als 500 Stück?",
@@ -866,7 +983,34 @@ function setLanguage(lang) {
   // Regenera section
   const regLabel = document.querySelector('#regenera .section-label');
   if (regLabel) {
-    regLabel.innerHTML = '<span style="display: inline-block; width: 6px; height: 6px; border-radius: 999px; background: var(--leaf-500); flex-shrink: 0; margin-right: var(--s-3);"></span><span style="background: linear-gradient(90deg, var(--leaf-500), var(--leaf-400)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">' + t.regenera.label + '</span>';
+    regLabel.innerHTML = '<span style="display: inline-block; width: 6px; height: 6px; border-radius: 999px; background: var(--leaf-500); flex-shrink: 0; margin-right: var(--s-3);"></span><span style="background: linear-gradient(90deg, var(--leaf-500), var(--leaf-400)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">' + t.regenera.sectionLabel + '</span>';
+  }
+  
+  // Progetti supportati section heading
+  const projSuppTitle = document.querySelector('#progetti-supportati .section-title');
+  if (projSuppTitle) projSuppTitle.textContent = t.regenera.projectsTitle;
+  
+  // Progetti supportati cards
+  const projSuppCards = document.querySelectorAll('#progetti-supportati > .wrap > div:last-child > div');
+  if (projSuppCards[0]) {
+    const p1Title = projSuppCards[0].querySelector('h3');
+    const p1Desc = projSuppCards[0].querySelector('p');
+    if (p1Title) p1Title.innerHTML = t.regenera.project1Title + ' <span style="color: var(--ink-400); font-weight: 500; display: inline-flex; align-items: center; gap: var(--s-2);"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="stroke: currentColor; stroke-width: 1.5;"><g clip-path="url(#clip0_125_1352)"><path d="M12 20.9L16.95 15.95C17.9289 14.971 18.5955 13.7237 18.8656 12.3659C19.1356 11.008 18.9969 9.60058 18.4671 8.32154C17.9373 7.0425 17.04 5.94929 15.8889 5.18015C14.7378 4.41101 13.3844 4.00049 12 4.00049C10.6156 4.00049 9.26222 4.41101 8.11109 5.18015C6.95996 5.94929 6.06275 7.0425 5.53292 8.32154C5.00308 9.60058 4.86442 11.008 5.13445 12.3659C5.40449 13.7237 6.07111 14.971 7.05 15.95L12 20.9ZM12 23.728L5.636 17.364C4.37734 16.1053 3.52019 14.5017 3.17293 12.7558C2.82567 11.01 3.00391 9.20041 3.6851 7.55588C4.36629 5.91136 5.51984 4.50575 6.99988 3.51683C8.47992 2.5279 10.22 2.00006 12 2.00006C13.78 2.00006 15.5201 2.5279 17.0001 3.51683C18.4802 4.50575 19.6337 5.91136 20.3149 7.55588C20.9961 9.20041 21.1743 11.01 20.8271 12.7558C20.4798 14.5017 19.6227 16.1053 18.364 17.364L12 23.728V23.728ZM12 13C12.5304 13 13.0391 12.7893 13.4142 12.4142C13.7893 12.0391 14 11.5304 14 11C14 10.4695 13.7893 9.96084 13.4142 9.58577C13.0391 9.2107 12.5304 8.99998 12 8.99998C11.4696 8.99998 10.9609 9.2107 10.5858 9.58577C10.2107 9.96084 10 10.4695 10 11C10 11.5304 10.2107 12.0391 10.5858 12.4142C10.9609 12.7893 11.4696 13 12 13ZM12 15C10.9391 15 9.92172 14.5786 9.17158 13.8284C8.42143 13.0783 8 12.0608 8 11C8 9.93912 8.42143 8.9217 9.17158 8.17156C9.92172 7.42141 10.9391 6.99998 12 6.99998C13.0609 6.99998 14.0783 7.42141 14.8284 8.17156C15.5786 8.9217 16 9.93912 16 11C16 12.0608 15.5786 13.0783 14.8284 13.8284C14.0783 14.5786 13.0609 15 12 15Z" fill="currentColor"></path></g></svg>' + t.regenera.project1Location + '</span>';
+    if (p1Desc) p1Desc.textContent = t.regenera.project1Desc;
+  }
+  
+  if (projSuppCards[1]) {
+    const p2Title = projSuppCards[1].querySelector('h3');
+    const p2Desc = projSuppCards[1].querySelector('p');
+    if (p2Title) p2Title.innerHTML = t.regenera.project2Title + ' <span style="color: var(--ink-400); font-weight: 500; display: inline-flex; align-items: center; gap: var(--s-2);"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="stroke: currentColor; stroke-width: 1.5;"><g clip-path="url(#clip0_125_1352)"><path d="M12 20.9L16.95 15.95C17.9289 14.971 18.5955 13.7237 18.8656 12.3659C19.1356 11.008 18.9969 9.60058 18.4671 8.32154C17.9373 7.0425 17.04 5.94929 15.8889 5.18015C14.7378 4.41101 13.3844 4.00049 12 4.00049C10.6156 4.00049 9.26222 4.41101 8.11109 5.18015C6.95996 5.94929 6.06275 7.0425 5.53292 8.32154C5.00308 9.60058 4.86442 11.008 5.13445 12.3659C5.40449 13.7237 6.07111 14.971 7.05 15.95L12 20.9ZM12 23.728L5.636 17.364C4.37734 16.1053 3.52019 14.5017 3.17293 12.7558C2.82567 11.01 3.00391 9.20041 3.6851 7.55588C4.36629 5.91136 5.51984 4.50575 6.99988 3.51683C8.47992 2.5279 10.22 2.00006 12 2.00006C13.78 2.00006 15.5201 2.5279 17.0001 3.51683C18.4802 4.50575 19.6337 5.91136 20.3149 7.55588C20.9961 9.20041 21.1743 11.01 20.8271 12.7558C20.4798 14.5017 19.6227 16.1053 18.364 17.364L12 23.728V23.728ZM12 13C12.5304 13 13.0391 12.7893 13.4142 12.4142C13.7893 12.0391 14 11.5304 14 11C14 10.4695 13.7893 9.96084 13.4142 9.58577C13.0391 9.2107 12.5304 8.99998 12 8.99998C11.4696 8.99998 10.9609 9.2107 10.5858 9.58577C10.2107 9.96084 10 10.4695 10 11C10 11.5304 10.2107 12.0391 10.5858 12.4142C10.9609 12.7893 11.4696 13 12 13ZM12 15C10.9391 15 9.92172 14.5786 9.17158 13.8284C8.42143 13.0783 8 12.0608 8 11C8 9.93912 8.42143 8.9217 9.17158 8.17156C9.92172 7.42141 10.9391 6.99998 12 6.99998C13.0609 6.99998 14.0783 7.42141 14.8284 8.17156C15.5786 8.9217 16 9.93912 16 11C16 12.0608 15.5786 13.0783 14.8284 13.8284C14.0783 14.5786 13.0609 15 12 15Z" fill="currentColor"></path></g></svg>' + t.regenera.project2Location + '</span>';
+    if (p2Desc) p2Desc.textContent = t.regenera.project2Desc;
+  }
+  
+  if (projSuppCards[2]) {
+    const p3Title = projSuppCards[2].querySelector('h3');
+    const p3Desc = projSuppCards[2].querySelector('p');
+    if (p3Title) p3Title.innerHTML = t.regenera.project3Title + ' <span style="color: var(--ink-400); font-weight: 500; display: inline-flex; align-items: center; gap: var(--s-2);"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="stroke: currentColor; stroke-width: 1.5;"><g clip-path="url(#clip0_125_1352)"><path d="M12 20.9L16.95 15.95C17.9289 14.971 18.5955 13.7237 18.8656 12.3659C19.1356 11.008 18.9969 9.60058 18.4671 8.32154C17.9373 7.0425 17.04 5.94929 15.8889 5.18015C14.7378 4.41101 13.3844 4.00049 12 4.00049C10.6156 4.00049 9.26222 4.41101 8.11109 5.18015C6.95996 5.94929 6.06275 7.0425 5.53292 8.32154C5.00308 9.60058 4.86442 11.008 5.13445 12.3659C5.40449 13.7237 6.07111 14.971 7.05 15.95L12 20.9ZM12 23.728L5.636 17.364C4.37734 16.1053 3.52019 14.5017 3.17293 12.7558C2.82567 11.01 3.00391 9.20041 3.6851 7.55588C4.36629 5.91136 5.51984 4.50575 6.99988 3.51683C8.47992 2.5279 10.22 2.00006 12 2.00006C13.78 2.00006 15.5201 2.5279 17.0001 3.51683C18.4802 4.50575 19.6337 5.91136 20.3149 7.55588C20.9961 9.20041 21.1743 11.01 20.8271 12.7558C20.4798 14.5017 19.6227 16.1053 18.364 17.364L12 23.728V23.728ZM12 13C12.5304 13 13.0391 12.7893 13.4142 12.4142C13.7893 12.0391 14 11.5304 14 11C14 10.4695 13.7893 9.96084 13.4142 9.58577C13.0391 9.2107 12.5304 8.99998 12 8.99998C11.4696 8.99998 10.9609 9.2107 10.5858 9.58577C10.2107 9.96084 10 10.4695 10 11C10 11.5304 10.2107 12.0391 10.5858 12.4142C10.9609 12.7893 11.4696 13 12 13ZM12 15C10.9391 15 9.92172 14.5786 9.17158 13.8284C8.42143 13.0783 8 12.0608 8 11C8 9.93912 8.42143 8.9217 9.17158 8.17156C9.92172 7.42141 10.9391 6.99998 12 6.99998C13.0609 6.99998 14.0783 7.42141 14.8284 8.17156C15.5786 8.9217 16 9.93912 16 11C16 12.0608 15.5786 13.0783 14.8284 13.8284C14.0783 14.5786 13.0609 15 12 15Z" fill="currentColor"></path></g></svg>' + t.regenera.project3Location + '</span>';
+    if (p3Desc) p3Desc.textContent = t.regenera.project3Desc;
   }
   
   const regTitle = document.querySelector('#regenera .section-title');
