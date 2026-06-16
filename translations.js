@@ -836,33 +836,36 @@ function setLanguage(lang) {
     });
   });
   
-  // Progetti section
-  const projTitle = document.querySelector('#progetti-supportati .section-title');
-  if (projTitle) projTitle.textContent = t.progetti.title;
-  
-  const projSubtitle = document.querySelector('#progetti-supportati .rg-body');
-  if (projSubtitle) projSubtitle.textContent = t.progetti.subtitle;
-  
-  const projCards = document.querySelectorAll('#progetti-supportati > .wrap > div:nth-child(2) > div');
+  // Progetti section (now inside #regenera)
+  const projTitle = document.querySelector('#regenera .wrap > h3');
+  if (projTitle) projTitle.textContent = t.regenera.projectsTitle;
+
+  const projCards = document.querySelectorAll('#regenera .wrap > div[style*="repeat(3"] > div');
   if (projCards[0]) {
     const p1Title = projCards[0].querySelector('h3');
+    const p1Loc = projCards[0].querySelector('div');
     const p1Desc = projCards[0].querySelector('p');
-    if (p1Title) p1Title.innerHTML = t.progetti.project1Title + ' <span style="color: var(--ink-400); font-weight: 500;">· ' + t.progetti.project1Location + '</span>';
-    if (p1Desc) p1Desc.textContent = t.progetti.project1Desc;
+    if (p1Title) p1Title.textContent = t.regenera.project1Title;
+    if (p1Loc) p1Loc.textContent = '📍 ' + t.regenera.project1Location;
+    if (p1Desc) p1Desc.textContent = t.regenera.project1Desc;
   }
-  
+
   if (projCards[1]) {
     const p2Title = projCards[1].querySelector('h3');
+    const p2Loc = projCards[1].querySelector('div');
     const p2Desc = projCards[1].querySelector('p');
-    if (p2Title) p2Title.innerHTML = t.progetti.project2Title + ' <span style="color: var(--ink-400); font-weight: 500;">· ' + t.progetti.project2Location + '</span>';
-    if (p2Desc) p2Desc.textContent = t.progetti.project2Desc;
+    if (p2Title) p2Title.textContent = t.regenera.project2Title;
+    if (p2Loc) p2Loc.textContent = '📍 ' + t.regenera.project2Location;
+    if (p2Desc) p2Desc.textContent = t.regenera.project2Desc;
   }
-  
+
   if (projCards[2]) {
     const p3Title = projCards[2].querySelector('h3');
+    const p3Loc = projCards[2].querySelector('div');
     const p3Desc = projCards[2].querySelector('p');
-    if (p3Title) p3Title.innerHTML = t.progetti.project3Title + ' <span style="color: var(--ink-400); font-weight: 500;">· ' + t.progetti.project3Location + '</span>';
-    if (p3Desc) p3Desc.textContent = t.progetti.project3Desc;
+    if (p3Title) p3Title.textContent = t.regenera.project3Title;
+    if (p3Loc) p3Loc.textContent = '📍 ' + t.regenera.project3Location;
+    if (p3Desc) p3Desc.textContent = t.regenera.project3Desc;
   }
   
   const pairLabel = document.querySelector('#abbinamenti .section-label');
@@ -986,32 +989,7 @@ function setLanguage(lang) {
     regLabel.innerHTML = '<span style="display: inline-block; width: 6px; height: 6px; border-radius: 999px; background: var(--leaf-500); flex-shrink: 0; margin-right: var(--s-3);"></span><span style="background: linear-gradient(90deg, var(--leaf-500), var(--leaf-400)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">' + t.regenera.sectionLabel + '</span>';
   }
   
-  // Progetti supportati section heading
-  const projSuppTitle = document.querySelector('#progetti-supportati .section-title');
-  if (projSuppTitle) projSuppTitle.textContent = t.regenera.projectsTitle;
-  
-  // Progetti supportati cards
-  const projSuppCards = document.querySelectorAll('#progetti-supportati > .wrap > div:last-child > div');
-  if (projSuppCards[0]) {
-    const p1Title = projSuppCards[0].querySelector('h3');
-    const p1Desc = projSuppCards[0].querySelector('p');
-    if (p1Title) p1Title.innerHTML = t.regenera.project1Title + ' <span style="color: var(--ink-400); font-weight: 500; display: inline-flex; align-items: center; gap: var(--s-2);"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="stroke: currentColor; stroke-width: 1.5;"><g clip-path="url(#clip0_125_1352)"><path d="M12 20.9L16.95 15.95C17.9289 14.971 18.5955 13.7237 18.8656 12.3659C19.1356 11.008 18.9969 9.60058 18.4671 8.32154C17.9373 7.0425 17.04 5.94929 15.8889 5.18015C14.7378 4.41101 13.3844 4.00049 12 4.00049C10.6156 4.00049 9.26222 4.41101 8.11109 5.18015C6.95996 5.94929 6.06275 7.0425 5.53292 8.32154C5.00308 9.60058 4.86442 11.008 5.13445 12.3659C5.40449 13.7237 6.07111 14.971 7.05 15.95L12 20.9ZM12 23.728L5.636 17.364C4.37734 16.1053 3.52019 14.5017 3.17293 12.7558C2.82567 11.01 3.00391 9.20041 3.6851 7.55588C4.36629 5.91136 5.51984 4.50575 6.99988 3.51683C8.47992 2.5279 10.22 2.00006 12 2.00006C13.78 2.00006 15.5201 2.5279 17.0001 3.51683C18.4802 4.50575 19.6337 5.91136 20.3149 7.55588C20.9961 9.20041 21.1743 11.01 20.8271 12.7558C20.4798 14.5017 19.6227 16.1053 18.364 17.364L12 23.728V23.728ZM12 13C12.5304 13 13.0391 12.7893 13.4142 12.4142C13.7893 12.0391 14 11.5304 14 11C14 10.4695 13.7893 9.96084 13.4142 9.58577C13.0391 9.2107 12.5304 8.99998 12 8.99998C11.4696 8.99998 10.9609 9.2107 10.5858 9.58577C10.2107 9.96084 10 10.4695 10 11C10 11.5304 10.2107 12.0391 10.5858 12.4142C10.9609 12.7893 11.4696 13 12 13ZM12 15C10.9391 15 9.92172 14.5786 9.17158 13.8284C8.42143 13.0783 8 12.0608 8 11C8 9.93912 8.42143 8.9217 9.17158 8.17156C9.92172 7.42141 10.9391 6.99998 12 6.99998C13.0609 6.99998 14.0783 7.42141 14.8284 8.17156C15.5786 8.9217 16 9.93912 16 11C16 12.0608 15.5786 13.0783 14.8284 13.8284C14.0783 14.5786 13.0609 15 12 15Z" fill="currentColor"></path></g></svg>' + t.regenera.project1Location + '</span>';
-    if (p1Desc) p1Desc.textContent = t.regenera.project1Desc;
-  }
-  
-  if (projSuppCards[1]) {
-    const p2Title = projSuppCards[1].querySelector('h3');
-    const p2Desc = projSuppCards[1].querySelector('p');
-    if (p2Title) p2Title.innerHTML = t.regenera.project2Title + ' <span style="color: var(--ink-400); font-weight: 500; display: inline-flex; align-items: center; gap: var(--s-2);"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="stroke: currentColor; stroke-width: 1.5;"><g clip-path="url(#clip0_125_1352)"><path d="M12 20.9L16.95 15.95C17.9289 14.971 18.5955 13.7237 18.8656 12.3659C19.1356 11.008 18.9969 9.60058 18.4671 8.32154C17.9373 7.0425 17.04 5.94929 15.8889 5.18015C14.7378 4.41101 13.3844 4.00049 12 4.00049C10.6156 4.00049 9.26222 4.41101 8.11109 5.18015C6.95996 5.94929 6.06275 7.0425 5.53292 8.32154C5.00308 9.60058 4.86442 11.008 5.13445 12.3659C5.40449 13.7237 6.07111 14.971 7.05 15.95L12 20.9ZM12 23.728L5.636 17.364C4.37734 16.1053 3.52019 14.5017 3.17293 12.7558C2.82567 11.01 3.00391 9.20041 3.6851 7.55588C4.36629 5.91136 5.51984 4.50575 6.99988 3.51683C8.47992 2.5279 10.22 2.00006 12 2.00006C13.78 2.00006 15.5201 2.5279 17.0001 3.51683C18.4802 4.50575 19.6337 5.91136 20.3149 7.55588C20.9961 9.20041 21.1743 11.01 20.8271 12.7558C20.4798 14.5017 19.6227 16.1053 18.364 17.364L12 23.728V23.728ZM12 13C12.5304 13 13.0391 12.7893 13.4142 12.4142C13.7893 12.0391 14 11.5304 14 11C14 10.4695 13.7893 9.96084 13.4142 9.58577C13.0391 9.2107 12.5304 8.99998 12 8.99998C11.4696 8.99998 10.9609 9.2107 10.5858 9.58577C10.2107 9.96084 10 10.4695 10 11C10 11.5304 10.2107 12.0391 10.5858 12.4142C10.9609 12.7893 11.4696 13 12 13ZM12 15C10.9391 15 9.92172 14.5786 9.17158 13.8284C8.42143 13.0783 8 12.0608 8 11C8 9.93912 8.42143 8.9217 9.17158 8.17156C9.92172 7.42141 10.9391 6.99998 12 6.99998C13.0609 6.99998 14.0783 7.42141 14.8284 8.17156C15.5786 8.9217 16 9.93912 16 11C16 12.0608 15.5786 13.0783 14.8284 13.8284C14.0783 14.5786 13.0609 15 12 15Z" fill="currentColor"></path></g></svg>' + t.regenera.project2Location + '</span>';
-    if (p2Desc) p2Desc.textContent = t.regenera.project2Desc;
-  }
-  
-  if (projSuppCards[2]) {
-    const p3Title = projSuppCards[2].querySelector('h3');
-    const p3Desc = projSuppCards[2].querySelector('p');
-    if (p3Title) p3Title.innerHTML = t.regenera.project3Title + ' <span style="color: var(--ink-400); font-weight: 500; display: inline-flex; align-items: center; gap: var(--s-2);"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="stroke: currentColor; stroke-width: 1.5;"><g clip-path="url(#clip0_125_1352)"><path d="M12 20.9L16.95 15.95C17.9289 14.971 18.5955 13.7237 18.8656 12.3659C19.1356 11.008 18.9969 9.60058 18.4671 8.32154C17.9373 7.0425 17.04 5.94929 15.8889 5.18015C14.7378 4.41101 13.3844 4.00049 12 4.00049C10.6156 4.00049 9.26222 4.41101 8.11109 5.18015C6.95996 5.94929 6.06275 7.0425 5.53292 8.32154C5.00308 9.60058 4.86442 11.008 5.13445 12.3659C5.40449 13.7237 6.07111 14.971 7.05 15.95L12 20.9ZM12 23.728L5.636 17.364C4.37734 16.1053 3.52019 14.5017 3.17293 12.7558C2.82567 11.01 3.00391 9.20041 3.6851 7.55588C4.36629 5.91136 5.51984 4.50575 6.99988 3.51683C8.47992 2.5279 10.22 2.00006 12 2.00006C13.78 2.00006 15.5201 2.5279 17.0001 3.51683C18.4802 4.50575 19.6337 5.91136 20.3149 7.55588C20.9961 9.20041 21.1743 11.01 20.8271 12.7558C20.4798 14.5017 19.6227 16.1053 18.364 17.364L12 23.728V23.728ZM12 13C12.5304 13 13.0391 12.7893 13.4142 12.4142C13.7893 12.0391 14 11.5304 14 11C14 10.4695 13.7893 9.96084 13.4142 9.58577C13.0391 9.2107 12.5304 8.99998 12 8.99998C11.4696 8.99998 10.9609 9.2107 10.5858 9.58577C10.2107 9.96084 10 10.4695 10 11C10 11.5304 10.2107 12.0391 10.5858 12.4142C10.9609 12.7893 11.4696 13 12 13ZM12 15C10.9391 15 9.92172 14.5786 9.17158 13.8284C8.42143 13.0783 8 12.0608 8 11C8 9.93912 8.42143 8.9217 9.17158 8.17156C9.92172 7.42141 10.9391 6.99998 12 6.99998C13.0609 6.99998 14.0783 7.42141 14.8284 8.17156C15.5786 8.9217 16 9.93912 16 11C16 12.0608 15.5786 13.0783 14.8284 13.8284C14.0783 14.5786 13.0609 15 12 15Z" fill="currentColor"></path></g></svg>' + t.regenera.project3Location + '</span>';
-    if (p3Desc) p3Desc.textContent = t.regenera.project3Desc;
-  }
+  // (project cards already handled above in the first #regenera block)
   
   const regTitle = document.querySelector('#regenera .section-title');
   if (regTitle) {
