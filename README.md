@@ -39,9 +39,37 @@ Tutte le call-to-action "Prenota una call" puntano al calendario Pipedrive:
 
 Regenera Design System — palette forest (`#0A1C13` base), accento leaf green (`#3FD369`), tipografia Montserrat. Nessun framework esterno, solo Google Fonts.
 
-## Sviluppo
+## URL per lingua
 
-La pagina è un singolo file HTML statico con `translations.js` esterno. Si apre direttamente nel browser senza build step.
+Ogni lingua ha un URL dedicato:
+
+| Lingua | URL |
+|--------|-----|
+| Italiano | `/it/` |
+| English | `/en/` |
+| Español | `/es/` |
+| Deutsch | `/de/` |
+
+La root `/` rileva la lingua del browser e fa redirect alla versione corretta. Cambiare la lingua nel dropdown naviga all'URL corrispondente.
+
+## Deploy (Railway)
+
+Il progetto include `Dockerfile` + `nginx.conf` per Railway. Railway auto-rileva il Dockerfile e fa il deploy senza configurazione aggiuntiva.
+
+```
+Dockerfile      # nginx:alpine, serve /usr/share/nginx/html
+nginx.conf      # routing per /it/, /en/, /es/, /de/ + cache header per gli asset
+```
+
+## Sviluppo locale
+
+```bash
+docker build -t treedom-natale .
+docker run -p 8080:80 treedom-natale
+# apri http://localhost:8080/it/
+```
+
+Oppure apri direttamente `it/index.html` nel browser (i path sono root-relative, quindi serve un server locale).
 
 ## Contatto
 
