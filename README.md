@@ -5,20 +5,31 @@ Landing page corporate per la campagna regali di Natale 2026 di Treedom.
 ## Struttura
 
 ```
-index.html      # Landing page (self-contained, CSS/JS inline)
-assets/         # Immagini prodotti, hero e loghi
+index.html          # Landing page (self-contained, CSS/JS inline)
+translations.js     # Supporto multilingua (IT, EN, ES, DE)
+assets/             # Immagini prodotti, hero e loghi
+donna-hero-optimized.jpg   # Foto hero principale
+regenera-team.jpg          # Immagine gift card Regenera
+regenera-projects.jpg      # Immagine sezione Regenera
+regenera-hero.jpg          # Foto hero Regenera (alternativa)
 ```
 
 ## Sezioni
 
-1. **Hero** — "Il regalo più bello è quello che resta." + foto vivaio
+1. **Hero** — "Il regalo più bello è quello che resta." + foto donna con pianta
 2. **Impact band** — 4 numeri chiave (15+ anni, 17 paesi, 13.000+ aziende, 94% rinnovo)
 3. **01 · Le formule** — 3 gift card: Regala un impatto (Regenera), Regala un albero, Prodotti buoni due volte
-4. **02 · Albero + prodotto** — Caffè Doña Lucero e Cioccolato Ciòchèbbuòno
-5. **03 · Prodotti Boniviri** — Olio EVO, Miele, Tisane, Fior di sale (B Corp siciliana)
-6. **04 · Grandi quantità** — offerta su misura per ordini 500+
-7. **05 · Perché adesso** — timeline orizzontale Giugno → Dicembre 2026
-8. **CTA** — "Parliamone davanti a un caffè" con link diretto al calendario Pipedrive
+4. **Regenera** — Nuova sezione dedicata: "Scegli il progetto. O lascia scegliere a loro."
+5. **Progetti supportati** — 3 card: Natura Urbana (Italia), Rimozione Plastica (Indonesia), Vox Maris (Sardegna)
+6. **02 · Albero + prodotto** — Caffè Doña Lucero e Cioccolato Ciòchèbbuòno
+7. **03 · Prodotti Boniviri** — Olio EVO, Miele, Tisane, Fior di sale (B Corp siciliana)
+8. **04 · Grandi quantità** — offerta su misura per ordini 500+
+9. **05 · Perché adesso** — timeline orizzontale Giugno → Dicembre 2026
+10. **CTA** — "Parliamone davanti a un caffè" con link diretto al calendario Pipedrive
+
+## Multilingua
+
+`translations.js` implementa `setLanguage(lang)` con supporto per IT, EN, ES, DE. Il selettore lingua è presente sia nel nav (`#lang-switch`) sia nel footer (`#lang-switch-footer`) e i due dropdown sono sincronizzati.
 
 ## CTA principale
 
@@ -31,7 +42,7 @@ Regenera Design System — palette forest (`#0A1C13` base), accento leaf green (
 
 ## Sviluppo
 
-La pagina è un singolo file HTML statico. Si apre direttamente nel browser senza build step.
+La pagina è un singolo file HTML statico con `translations.js` esterno. Si apre direttamente nel browser senza build step.
 
 ## Contatto
 
