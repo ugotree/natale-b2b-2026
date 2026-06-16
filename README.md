@@ -19,8 +19,7 @@ regenera-hero.jpg          # Foto hero Regenera (alternativa)
 1. **Hero** — "Il regalo più bello è quello che resta." + foto donna con pianta
 2. **Impact band** — 4 numeri chiave (15+ anni, 17 paesi, 13.000+ aziende, 94% rinnovo)
 3. **01 · Le formule** — 3 gift card: Regala un impatto (Regenera), Regala un albero, Prodotti buoni due volte
-4. **Regenera** — Nuova sezione dedicata: "Scegli il progetto. O lascia scegliere a loro."
-5. **Progetti supportati** — 3 card: Natura Urbana (Italia), Rimozione Plastica (Indonesia), Vox Maris (Sardegna)
+4. **Regenera (unificata)** — Sezione unica con: titolo "Scegli il progetto. / O lascia scegliere a loro.", sottotitolo + immagine, poi subtitolo "Alcuni progetti che puoi supportare." e 3 card: Natura Urbana (Italia), Rimozione Plastica (Indonesia), Vox Maris (Sardegna) — CTA "Prenota una call" sotto le card
 6. **02 · Albero + prodotto** — Caffè Doña Lucero e Cioccolato Ciòchèbbuòno
 7. **03 · Prodotti Boniviri** — Olio EVO, Miele, Tisane, Fior di sale (B Corp siciliana)
 8. **04 · Grandi quantità** — offerta su misura per ordini 500+
